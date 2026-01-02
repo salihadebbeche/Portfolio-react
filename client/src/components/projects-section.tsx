@@ -16,49 +16,59 @@ interface Project {
 const projects: Project[] = [
   {
     id: 2,
-    title: "Lab 2: State & Events",
+    title: "Lab 2: Git & GitHub",
     description:
-      "Gestion de l'état local avec useState et manipulation des événements utilisateur dans React.",
-    techStack: ["React", "useState", "Events"],
+      "Ce laboratoire a pour objectif d’initier les étudiants à l’utilisation de Git comme système de gestion de versions et à la publication de projets sur GitHub/GitLab.",
+    techStack: ["Git", "GitHub / GitLab", "Terminal / Git Bash"],
     githubUrl: "https://github.com/salihadebbeche/caw-labs/tree/lab2-setup",
   },
   {
     id: 3,
-    title: "Lab 3: Effects & Lifecycle",
+    title: "Lab 3: Node.js et NPM",
     description:
-      "Utilisation de useEffect pour gérer les effets de bord et le cycle de vie des composants.",
-    techStack: ["React", "useEffect", "API"],
+      "Ce lab présente les bases de Node.js et l’utilisation de NPM à travers des scripts JavaScript exécutés côté serveur",
+    techStack: ["JavaScript", "Node.js", "NPM"],
     githubUrl: "https://github.com/salihadebbeche/caw-labs/tree/lab7-setup/lab3",
-    liveUrl: "https://lab3-demo.netlify.app",
+    
   },
   {
     id: 4,
-    title: "Lab 4: Forms & Validation",
+    title: "Lab 4: JavaScript avec Jest",
     description:
-      "Création de formulaires contrôlés avec validation des données utilisateur.",
-    techStack: ["React", "Forms", "Validation"],
+      "Ce lab introduit les tests unitaires en JavaScript en utilisant Jest afin de vérifier la fiabilité et le bon fonctionnement des fonctions.",
+    techStack: ["JavaScript", "Node.js", "NPM", "Jest"],
     githubUrl:
       "https://github.com/salihadebbeche/caw-labs/tree/lab4-setup/Lab4_Jest",
   },
   {
     id: 5,
-    title: "Lab 5: React Router",
+    title: "Lab 5: ReactJS",
     description:
-      "Navigation côté client avec React Router. Création d'une application multi-pages SPA.",
-    techStack: ["React", "React Router", "SPA"],
+      "Ce lab permet de découvrir les composants React et la gestion des événements, des états et des props à travers des exercices pratiques",
+    techStack: ["JavaScript (ES6)", "ReactJS", "JSX", "Node.js & NPM"],
     githubUrl:
       "https://github.com/salihadebbeche/caw-labs/tree/lab5-setup/lab5-react",
-    liveUrl: "https://lab5-demo.netlify.app",
+    
   },
   {
     id: 7,
     title: "Lab 7: Kanban Board",
     description:
-      "Application de gestion de tâches style Kanban avec drag & drop et persistance des données.",
-    techStack: ["React", "DnD", "LocalStorage"],
+      "Une application Kanban inspirée de Trello permettant de gérer des tâches selon différents états.",
+    techStack: ["React.js", "Vite", "CSS / CSS Framework"],
     githubUrl:
       "https://github.com/salihadebbeche/caw-labs/tree/lab7-setup/kanban-board",
-    liveUrl: "https://lab7-kanban.netlify.app",
+    
+  },
+  {
+    id: 8,
+    title: "PFE Licence (Système de pointage)",
+    description:
+      "Ce projet vise à développer une application web de pointage permettant de gérer la présence des utilisateurs de manière sécurisée et organisée.",
+    techStack: ["PHP", "MySQL", "HTML / CSS / JavaScript"],
+    githubUrl:
+      "https://github.com/salihadebbeche/pfe-licence",
+    
   },
 ];
 

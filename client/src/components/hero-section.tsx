@@ -1,14 +1,30 @@
-// src/sections/hero-section.tsx
 import { ArrowDown, Github, Linkedin, Mail, Terminal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import photoPort from "@/assets/photo_portfolio.jpg"; // ou "../assets/photo_port.jpg"
+import photoPort from "@/assets/photo_portfolio.jpg";
+import { useWordTypewriter } from "@/hooks/useWordTypewriter";
 
 const typingPhrases = [
   "Junior Developer",
   "Front‑End Enthusiast",
   "React & TypeScript Lover",
 ];
+
+const ABOUT_TEXT =
+  "Étudiante en Master 1 STIC, passionnée par le développement web moderne, les interfaces réactives et les expériences utilisateur soignées. Ce portfolio regroupe mes projets académiques, labs React et explorations front‑end.";
+
+function AboutParagraph() {
+  const aboutTyped = useWordTypewriter(ABOUT_TEXT, 220);
+
+  return (
+    <div className="max-w-xl kbd-paragraph-wrapper">
+      <div className="kbd-paragraph">
+        <span className="kbd-paragraph-text">{aboutTyped}</span>
+        <span className="kbd-paragraph-caret" />
+      </div>
+    </div>
+  );
+}
 
 export function HeroSection() {
   const scrollToProjects = () => {
@@ -78,12 +94,8 @@ export function HeroSection() {
             </div>
           </div>
 
-          <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-xl">
-            Étudiante en Master 1 STIC, passionnée par le développement web
-            moderne, les interfaces réactives et les expériences utilisateur
-            soignées. Ce portfolio regroupe mes projets académiques, labs
-            React et explorations front‑end.
-          </p>
+          {/* Paragraphe clavier mot par mot (remplace juste l'ancien <p>) */}
+          <AboutParagraph />
 
           {/* Tags de stack */}
           <div className="flex flex-wrap gap-2 text-xs">
@@ -173,8 +185,8 @@ export function HeroSection() {
                 <Avatar className="w-52 h-52 md:w-64 md:h-64 ring-4 ring-primary/40 ring-offset-4 ring-offset-background shadow-xl shadow-primary/40 animate-float">
                   <AvatarImage src={photoPort} alt="Saliha Debbeche" />
                   <AvatarFallback className="text-5xl font-bold bg-primary text-primary-foreground">
-                      SD 
-                    </AvatarFallback>
+                    SD
+                  </AvatarFallback>
                 </Avatar>
                 <div>
                   <p className="text-sm text-muted-foreground">Profil</p>

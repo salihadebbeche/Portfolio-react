@@ -13,6 +13,8 @@ import {
   SiNodedotjs,
   SiTailwindcss,
   SiNpm,
+  SiMysql,
+  SiPhp,
 } from "react-icons/si";
 import {
   Card,
@@ -56,6 +58,11 @@ const skillCategories: SkillCategory[] = [
         icon: <SiCss3 className="text-sky-500" />,
         level: "Intermédiaire",
       },
+      {
+        name: "PHP",
+        icon: <SiPhp className="text-indigo-500" />,
+        level: "Intermédiaire",
+      },
     ],
   },
   {
@@ -97,14 +104,46 @@ const skillCategories: SkillCategory[] = [
         level: "Intermédiaire",
       },
       {
-        name: "Jest",
-        icon: <SiJest className="text-red-500" />,
-        level: "Débutant",
+        name: "VS Code",
+        icon: (
+          <div className="w-5 h-5 rounded-md bg-sky-500/80 flex items-center justify-center text-[10px] font-bold text-white">
+            VS
+          </div>
+        ),
+        level: "Avancé",
+      },
+      {
+        name: "MySQL",
+        icon: <SiMysql className="text-sky-700" />,
+        level: "Intermédiaire",
+      },
+      {
+        name: "phpMyAdmin",
+        icon: (
+          <div className="w-5 h-5 rounded-sm bg-orange-500/80 flex items-center justify-center text-[10px] font-bold text-white">
+            php
+          </div>
+        ),
+        level: "Intermédiaire",
+      },
+      {
+        name: "XAMPP",
+        icon: (
+          <div className="w-5 h-5 rounded-sm bg-orange-600/80 flex items-center justify-center text-[10px] font-bold text-white">
+            X
+          </div>
+        ),
+        level: "Intermédiaire",
       },
       {
         name: "npm",
         icon: <SiNpm className="text-red-500" />,
         level: "Intermédiaire",
+      },
+      {
+        name: "Jest",
+        icon: <SiJest className="text-red-500" />,
+        level: "Débutant",
       },
     ],
   },
